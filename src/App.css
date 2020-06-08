@@ -1,0 +1,63 @@
+
+* {
+  margin: 0;
+  /*padding: 0;
+  box-sizing: border-box;*/
+}
+
+/*body {
+  background-color: #F0F0EB;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li a {
+  top: 266px;
+  font: SemiBold 18px/40px Nunito Sans;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: grid;
+  align-items: center;
+}*/
+
+.App {
+  /*text-align: center;*/
+  background-color: #FAFBF8;
+}
+
+.App-header {
+  /*min-height: 100vh;*/ /*starts from top*/
+  /*background-color: #F0F0EB;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*font-size: calc(10px + 2vmin);*/
+}
+
+/*.App-logo {
+  top: 73px;
+  left: 773px;
+  width: 382px;
+  height: 118px;
+}*/
+
+/*hr {
+  color: #707070;
+  width: 968px;
+  height: 1px;
+}*/
+
+
