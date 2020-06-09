@@ -1,63 +1,94 @@
 
-* {
-  margin: 0;
-  /*padding: 0;
-  box-sizing: border-box;*/
-}
-
-/*body {
-  background-color: #F0F0EB;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-}
-
-ul li a {
-  top: 266px;
-  font: SemiBold 18px/40px Nunito Sans;
-  letter-spacing: 3.6px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.container {
-  display: grid;
-  align-items: center;
-}*/
-
 .App {
-  /*text-align: center;*/
-  background-color: #FAFBF8;
+  margin: 0;
+  padding: 0;
+  /*height: 100vh;*/ /*uses full height of screen*/
+  /*background-color: #FAFBF8;*/
+  display: grid;
+  grid-template-columns: /*grid columns from XD*/
+    1fr
+    repeat(12, minmax(0, 86px))
+    1fr
+  ;
+  grid-gap: 0px; 
+  grid-template-rows: /*heights from XD*/
+    1235px
+    858px
+    1307px
+    230px
+    906px
+    608px
+    528px
+    1fr /*85px*/ 
+  ;
+  grid-template-areas:
+    "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
+    "philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy"
+    "newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork"
+    "categories categories categories categories categories categories categories categories categories categories categories categories"
+    "testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials"
+    "followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta"
+    "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
+    "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
+  ;
+  }
+
+
+.navigation {
+  background-color: blueviolet;
+  grid-area: navigation;
 }
 
-.App-header {
-  /*min-height: 100vh;*/ /*starts from top*/
-  /*background-color: #F0F0EB;*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /*font-size: calc(10px + 2vmin);*/
+.philosophy {
+  background-color: burlywood;
+  grid-area: philosophy;
 }
 
-/*.App-logo {
-  top: 73px;
-  left: 773px;
-  width: 382px;
-  height: 118px;
-}*/
+.newestWork {
+  background-color: cadetblue;
+  grid-area: newestWork;
+}
 
-/*hr {
-  color: #707070;
-  width: 968px;
-  height: 1px;
-}*/
+.categories {
+  background-color: crimson;
+  grid-area: categories;
+}
 
+.testimonials {
+  background-color: darkgray;
+  grid-area: testimonials;
+}
+
+.followOnInsta {
+  background-color: peru;
+  grid-area: followOnInsta;
+}
+
+.footerBrowser {
+  background-color: deeppink;
+  grid-area: footerBrowser;
+}
+
+.copyright {
+  background-color: dodgerblue;
+  grid-area: copyright;
+}
+
+@media screen and (max-width: 360px) /*mobile screen width from XD*/ {
+  /*.navigation {
+    background-color: black;
+  }*/ /*testing media queries with color change*/
+  .App {
+    grid-template-areas:
+      "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
+      "philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy"
+      "newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork"
+      "categories categories categories categories categories categories categories categories categories categories categories categories"
+      "testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials"
+      "followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta"
+      "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
+      "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
+    ;
+  }
+}
 

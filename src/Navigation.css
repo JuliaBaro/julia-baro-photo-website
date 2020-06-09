@@ -1,44 +1,14 @@
-/*#nav-bar {
-    background-color: #F0F0EB;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-}
-
-ul li a {
-    top: 266px;
-    font-style: Bold;
-    font-size: 18px/40px;
-    font-family: 'Nunito Sans', sans-serif;
-    letter-spacing: 3.6px;
-    color: #000000;
-    text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.container {
-    display: grid;
-    align-items: center;
-}*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif, 'Arial', sans-serif;
-  }
-
   .App-logo {
     padding-top: 73px; /*use ratio*/
     padding-bottom: 65px; /*use ratio*/
     width: 382px;
-    /*width: 118px;*/
+  }
+
+  .App-header {
+    display: flex;
+    /*flex-direction: column;*/ 
+    /*align-items: center;
+    justify-content: center;*/
   }
 
   .Div-line {
@@ -172,7 +142,3 @@ a {
     display: block;
     cursor: pointer;
 }
-
-/*.mobile-nav {
-    transform: translate(0%)!important;
-}*/
