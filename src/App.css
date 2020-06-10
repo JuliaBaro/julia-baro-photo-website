@@ -1,13 +1,15 @@
 
 .App {
-  margin: 0;
+  margin: 0 auto; /*this should center content*/
+  /*margin: 0;*/
   padding: 0;
-  /*height: 100vh;*/ /*uses full height of screen*/
-  /*background-color: #FAFBF8;*/
   display: grid;
+  height: 100vh; /*uses full height of screen*/
+  /*background-color: #FAFBF8;*/
   grid-template-columns: /*grid columns from XD*/
     1fr
     repeat(12, minmax(0, 86px))
+    /*repeat(12, 86px)*/
     1fr
   ;
   grid-gap: 0px; 
@@ -74,11 +76,12 @@
   grid-area: copyright;
 }
 
-@media screen and (max-width: 360px) /*mobile screen width from XD*/ {
-  /*.navigation {
+/*mobile screen width from XD - 480px is also common*/
+@media screen and (max-width: 360px) {
+  .navigation {
     background-color: black;
-  }*/ /*testing media queries with color change*/
-  .App {
+  } /*testing media queries with color change*/
+  /*.App {
     grid-template-areas:
       "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
       "philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy"
@@ -89,6 +92,6 @@
       "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
       "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
     ;
-  }
+  }*/
 }
 

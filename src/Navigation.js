@@ -6,7 +6,7 @@ import line from './line.svg';
 function Navigation() {
     return (
         <div class="page-wrapper">
-            <div class="nav-wrapper">
+            {/*<div class="nav-wrapper">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
                     <img src={line} className="Div-line" alt="line" />
@@ -24,7 +24,7 @@ function Navigation() {
                         <li class="nav-item"><a href="#">Kapcsolat</a></li>
                     </ul>
                 </nav>
-            </div>
+            </div>*/}
         </div>
     );
   }

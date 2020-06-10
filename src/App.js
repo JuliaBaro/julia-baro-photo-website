@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import line from './line.svg';
+//import line from './line.svg';
 //import leftArrow from './leftArrow';
 //import rightArrow from './rightArrow';
 //import quotemark from './quotemark';
  
-import Navigation from './Navigation';
-import Galleries from './Galleries';
-import Gallery from './Gallery';
+//import Navigation from './Navigation';
+//import Galleries from './Galleries';
+//import Gallery from './Gallery';
 //import Info from './Info';
 //import About from './About';
 //import Contact from './Contact';
@@ -22,6 +22,7 @@ function App() {
   return (
     <div className="App">
 
+        {/*
         <div className="navigation">
           <Navigation />
         </div>
@@ -103,6 +104,32 @@ function App() {
             <h2>© 2020 Julia Baro Photography</h2>
           </div>
         </footer>
+        */}
+
+        <div className="navigation">
+          navigation
+        </div>
+        <div className="philosophy">
+          philosophy
+        </div>
+        <div className="newestWork">
+          newestWork
+        </div>
+        <div className="categories">
+          categories
+        </div>
+        <div className="testimonials">
+          testimonials
+        </div>
+        <div className="followOnInsta">
+          followOnInsta
+        </div>
+        <div className="footerBrowser">
+          footerBrowser
+        </div>
+        <div className="copyright">
+          copyright
+        </div>
 
     </div>
   );

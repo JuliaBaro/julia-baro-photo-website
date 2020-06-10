@@ -1,19 +1,16 @@
-  .App-logo {
-    padding-top: 73px; /*use ratio*/
-    padding-bottom: 65px; /*use ratio*/
+  /*.App-logo {
+    padding-top: 73px; 
+    padding-bottom: 65px; 
     width: 382px;
   }
 
   .App-header {
     display: flex;
-    /*flex-direction: column;*/ 
-    /*align-items: center;
-    justify-content: center;*/
   }
 
   .Div-line {
       width: 968px;
-  }
+  }*/
   
   /* BASIC SETUP */
   
@@ -22,11 +19,11 @@
     height: auto;
   }*/
   
-  .nav-wrapper {
+  /*.nav-wrapper {
     width: 100%;
     top: 0;
     background-color: #F0F0EB;
-  }
+  }*/
   
   /* NAVIGATION */
   
@@ -55,7 +52,6 @@
   }
   
   .nav-item a:hover {
-    /*color: #3498db;*/
     font-weight: bold;
   }
   
