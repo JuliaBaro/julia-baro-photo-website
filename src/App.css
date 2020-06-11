@@ -1,18 +1,37 @@
 
 .App {
+  max-width: 1472px; /*1920px*/
   margin: 0 auto; /*this should center content*/
   /*margin: 0;*/
-  padding: 0;
+  padding: 0px;
   display: grid;
-  height: 100vh; /*uses full height of screen*/
+  /*justify-items: center;
+  align-items: center;*/
+  align-content: center;
+  /*height: 100vh; uses full height of screen*/
   /*background-color: #FAFBF8;*/
   grid-template-columns: /*grid columns from XD*/
-    1fr
-    repeat(12, minmax(0, 86px))
+    220px /*1fr*/
+    /*repeat(12, minmax(0, 86px))*/
+    86px
+    86px
+    86px
+    86px
+    86px
+    86px
+    86px
+    86px
+    86px
+    86px
+    86px
+    86px
+    86px
+    86px
     /*repeat(12, 86px)*/
-    1fr
+    220px /*1fr*/
   ;
-  grid-gap: 0px; 
+  column-gap: 40 px; /*distance between columns based on XD*/
+  /*grid-gap: 0px;*/ /*gap betweeen both rows and columns*/
   grid-template-rows: /*heights from XD*/
     1235px
     858px
@@ -81,17 +100,17 @@
   .navigation {
     background-color: black;
   } /*testing media queries with color change*/
-  /*.App {
+  .App {
     grid-template-areas:
-      "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
-      "philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy"
-      "newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork"
-      "categories categories categories categories categories categories categories categories categories categories categories categories"
-      "testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials"
-      "followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta"
-      "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
-      "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
+      "navigation navigation navigation navigation"
+      "philosophy philosophy philosophy philosophy"
+      "newestWork newestWork newestWork newestWork"
+      "categories categories categories categories"
+      "testimonials testimonials testimonials testimonials"
+      "followOnInsta followOnInsta followOnInsta followOnInsta"
+      "footerBrowser footerBrowser footerBrowser footerBrowser"
+      "copyright copyright copyright copyright"
     ;
-  }*/
+  }
 }
 
