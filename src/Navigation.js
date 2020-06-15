@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navigation.css';
-import logo from './logo.svg';
-import line from './line.svg';
+//import logo from './logo.svg';
+//mport line from './line.svg';
 
 function Navigation() {
     return (

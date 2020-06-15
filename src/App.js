@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import line from './line.svg';
+//import line from './line.svg';
 //import leftArrow from './leftArrow';
 //import rightArrow from './rightArrow';
 //import quotemark from './quotemark';
@@ -29,14 +29,15 @@ import line from './line.svg';
 
 function App() {
   return (
-    <div className="App">
+    <div id="app">
 
       <div className="navigation">
         navigation
       </div>
 
       <div className="philosophy">
-        <img alt="philosophy img"/>
+        philosophy
+        {/*<img alt="philosophy img"/>
         <h1>Látásmódom</h1>
         <h2>Őszinte képvilág</h2>
         <p>Kíváncsi természetű vagyok, örök megfigyelő. Elbűvöl az emberek sokfélesége. Meggyőződésem, 
@@ -45,44 +46,46 @@ function App() {
           önmagát látja viszont.
         </p>
         <h2>Tudj meg többet</h2>
-        <img src={line} className="divLine" alt="line" />
+        <img src={line} className="divLine" alt="line" />*/}
       </div>
 
       <div className="newestWork">
-        <h1>Legújabb képeim</h1>
+        newestWork
+        {/*<h1>Legújabb képeim</h1>
         <h2>Válogatott kedvencek</h2>
         <img alt="img1"/>
         <img alt="img2"/>
         <img alt="img3"/>
         <img alt="img4"/>
         <img alt="img5"/>
-        <h2>Összes galéria</h2>
-        {/*<Galleries />
-        <Gallery />*/}
+        <h2>Összes galéria</h2>*/}
       </div>
 
       <div className="categories">
-        <img src={line} className="divLine" alt="line" />
+        categories
+        {/*<img src={line} className="divLine" alt="line" />
         <h1>Portré</h1>
         <h2>Tovább</h2>
         <h1>Párfotó</h1>
         <h2>Tovább</h2>
         <h1>Divatfotó</h1>
         <h2>Tovább</h2>
-        <img src={line} className="divLine" alt="line" />
+      <img src={line} className="divLine" alt="line" />*/}
       </div>
 
       <div className="testimonials">
-        <img alt="testimonial img"/>
+        testimonials
+        {/*<img alt="testimonial img"/>
           <h1>Vélemények</h1>
         <p>Felülírtad eddigi fotózással kapcsolatos élményeimet, amiért nagyon hálás vagyok! Egy nagyon kellemes nappal 
           és sok őszinte képpel lettem gazdagabb (amiket szívesen nézek vissza). Szandra
-        </p>
+        </p>*/}
       </div>
 
       {/*<footer>*/}
       <div className="followOnInsta">
-        <img src={line} className="divLine" alt="line" />
+        followOnInsta
+        {/*<img src={line} className="divLine" alt="line" />
         <h1>Kövess az Instagramon</h1> 
         <h2>@juliabarophoto</h2>
         <img alt="insta img1"/>
@@ -90,22 +93,24 @@ function App() {
         <img alt="insta img3"/>
         <img alt="insta img4"/>
         <img alt="insta img5"/>
-        <img alt="insta img6"/>
+        <img alt="insta img6"/>*/}
       </div>
 
       <div className="footerBrowser">
-        <h1>Kereső</h1>
+        footerBrowser
+        {/*<h1>Kereső</h1>
         <h2>Galériák</h2>
         <h2>Infó</h2>
         <h2>Rólam</h2>
         <h2>Kapcsolat</h2>  
         <img alt="portrait"/>
         <h1>Kapcsolat</h1>
-        <p>+36 30 224 5167</p>
+        <p>+36 30 224 5167</p>*/}
       </div>
 
       <div className="copyright">
-        <h2>© 2020 Julia Baro Photography</h2>
+        copyright
+        {/*<h2>© 2020 Julia Baro Photography</h2>*/}
       </div>
       {/*</footer>*/}
 

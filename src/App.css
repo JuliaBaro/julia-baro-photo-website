@@ -1,17 +1,19 @@
 
-.App {
-  max-width: 1472px; /*1920px*/
-  margin: 0 auto; /*this should center content*/
+#app {
+  /*max-width: 1472px;*/ /*1920px*/
+  /*margin: 0 auto;*/ /*this should center content*/
   /*margin: 0;*/
-  padding: 0px;
-  display: grid;
+  /*padding: 0px;*/
   /*justify-items: center;
-  align-items: center;*/
-  align-content: center;
-  /*height: 100vh; uses full height of screen*/
-  /*background-color: #FAFBF8;*/
+  align-items: center;
+  align-content: center;*/
+   /*background-color: #FAFBF8;*/
+  height: 100vh; /* uses full height of screen */
+  display: grid;
+  background-color: purple;
   grid-template-columns: /*grid columns from XD*/
-    220px /*1fr*/
+    /*220px*/ 
+    1fr
     /*repeat(12, minmax(0, 86px))*/
     86px
     86px
@@ -28,21 +30,22 @@
     86px
     86px
     /*repeat(12, 86px)*/
-    220px /*1fr*/
+    /*220px*/ 
+    1fr
   ;
-  column-gap: 40 px; /*distance between columns based on XD*/
-  /*grid-gap: 0px;*/ /*gap betweeen both rows and columns*/
-  grid-template-rows: /*heights from XD*/
-    1235px
+  /*column-gap: 40 px;*/ /*distance between columns based on XD*/
+  grid-gap: 4px; /*gap betweeen both rows and columns*/
+  /*grid-template-rows:*/ /*heights from XD*/
+    /*1235px
     858px
     1307px
     230px
     906px
     608px
     528px
-    1fr /*85px*/ 
-  ;
-  grid-template-areas:
+    1fr*/ /*85px*/ 
+  /*;*/
+  /*grid-template-areas:
     "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
     "philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy"
     "newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork"
@@ -51,56 +54,59 @@
     "followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta"
     "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
     "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
-  ;
-  }
+  ;*/
+}
 
+#app > div {
+  background-color: royalblue;
+}
 
 .navigation {
-  background-color: blueviolet;
+  /*background-color: blueviolet;*/
   grid-area: navigation;
 }
 
 .philosophy {
-  background-color: burlywood;
+  /*background-color: burlywood;*/
   grid-area: philosophy;
 }
 
 .newestWork {
-  background-color: cadetblue;
+  /*background-color: cadetblue;*/
   grid-area: newestWork;
 }
 
 .categories {
-  background-color: crimson;
+  /*background-color: crimson;*/
   grid-area: categories;
 }
 
 .testimonials {
-  background-color: darkgray;
+  /*background-color: darkgray;*/
   grid-area: testimonials;
 }
 
 .followOnInsta {
-  background-color: peru;
+  /*background-color: peru;*/
   grid-area: followOnInsta;
 }
 
 .footerBrowser {
-  background-color: deeppink;
+  /*background-color: deeppink;*/
   grid-area: footerBrowser;
 }
 
 .copyright {
-  background-color: dodgerblue;
+  /*background-color: dodgerblue;*/
   grid-area: copyright;
 }
 
 /*mobile screen width from XD - 480px is also common*/
 @media screen and (max-width: 360px) {
-  .navigation {
+  /*.navigation {
     background-color: black;
-  } /*testing media queries with color change*/
-  .App {
+  }*/ /*testing media queries with color change*/
+  /*.App {
     grid-template-areas:
       "navigation navigation navigation navigation"
       "philosophy philosophy philosophy philosophy"
@@ -111,6 +117,6 @@
       "footerBrowser footerBrowser footerBrowser footerBrowser"
       "copyright copyright copyright copyright"
     ;
-  }
+  }*/
 }
 
