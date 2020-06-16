@@ -1,0 +1,122 @@
+/*Defining the font and pixels so we can work with em later*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+/* wrapper of the content*/
+.wrapper {
+    /*Here we define the start of the grid*/
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns: 
+        11.6666667% /*1fr*/ 
+        repeat(12, minmax(0, 4,47916667%)) /*repeat(12, minmax(0, 86px))*/
+        11.6666667% /*1fr*/
+    ;
+    column-gap: 2,08333333%; /*40px*/
+
+    grid-template-areas:
+      "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
+      ". philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy ."
+      ". newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork ."
+      ". categories categories categories categories categories categories categories categories categories categories categories categories ."
+      ". testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials ."
+      ". followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta ."
+      "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
+      "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
+    ;
+
+
+    grid-template-rows:
+        1235px
+        858px
+        1307px
+        230px
+        906px
+        608px
+        528px
+        1fr
+    ; /*85px*/ 
+}
+
+.navigation {
+    /* grid-column: 4/4; */
+    background-color: turquoise;
+    grid-area: navigation;
+}
+
+.philosophy {
+    background-color: rgba(230,45,45,0.50);
+    grid-area: philosophy;
+}
+
+.newestWork {
+    background-color: rgba(50,115,180,0.50);
+    grid-area: newestWork;
+}
+
+.categories {
+    background-color: rgba(120,230,45,0.50);
+    grid-area: categories;
+}
+
+.testimonials {
+    /* grid-column: 4/4; */
+    background-color: turquoise;
+    grid-area: testimonials;
+}
+
+.followOnInsta {
+    background-color: rgba(230,45,45,0.50);
+    grid-area: followOnInsta;
+}
+
+.footerBrowser {
+    background-color: rgba(50,115,180,0.50);
+    grid-area: footerBrowser;
+}
+
+.copyright {
+    background-color: rgba(120,230,45,0.50);
+    grid-area: copyright;
+}
+
+@media screen and (max-width: 768px) {
+    /*.navigation {
+        background-color: pink;
+    }*/
+
+    .wrapper {
+        grid-template-areas: 
+        "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
+        ". philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy ."
+        ". newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork ."
+        ". categories categories categories categories categories categories categories categories categories categories categories categories ."
+        ". testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials ."
+        ". followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta ."
+        "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
+        "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
+    }
+}
+
+@media screen and (max-width: 360px) { /*480px*/
+    /*.navigation {
+        background-color: yellow;
+    }*/
+
+    .wrapper {
+        grid-template-areas: 
+            "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
+            "philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy"
+            "newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork"
+            "categories categories categories categories categories categories categories categories categories categories categories categories categories categories"
+            "testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials"
+            "followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta"
+            "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
+            "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
+    }
+}
