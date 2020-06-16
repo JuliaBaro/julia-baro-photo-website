@@ -29,7 +29,7 @@ import './App.css';
 
 function App() {
   return (
-    <div id="app">
+    <div className="app_container">
 
       <div className="navigation">
         navigation
