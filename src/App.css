@@ -72,10 +72,10 @@ p {
   display: grid;
   grid-template-columns: 
       11.6666667% /*1fr*/ 
-      repeat(12, minmax(0, 4,47916667%)) /*repeat(12, minmax(0, 86px))*/
+      repeat(12, minmax(0, 4.47916667%)) /*repeat(12, minmax(0, 86px))*/
       11.6666667% /*1fr*/
   ;
-  column-gap: 2,08333333%; /*40px*/
+  column-gap: 2.08333333%; /*40px*/
   grid-template-areas:
     "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
     ". philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy ."
