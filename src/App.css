@@ -1,16 +1,81 @@
-/* wrapper of the content*/
+
+
+
+/* --> FONTS STYLES AND DIV LINE <-- */
+
+/*
+font weights by number
+200 extra light
+300 light
+400 regular
+600 semi bold
+700 bold
+800 extra bold
+900 black
+*/
+
+h1 {
+  font-family: 'Playfair Display';
+  font-size: 32px; /*change to em/rem*/
+  font-weight: bold;
+  letter-spacing: 3.2px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px; /*change to em/rem*/
+  font-weight: 600;
+  letter-spacing: 3.6px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Corbel';
+  font-size: 24px; /*change to em/rem*/
+  font-weight: 300;
+  letter-spacing: 1.38px;
+  /*line-height: 40px;*/
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px; /*change to em/rem*/
+  font-weight: 400;
+  letter-spacing: 3.6px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-size: 18px; /*change to em/rem*/
+  font-weight: 400;
+  letter-spacing: 1.68px;
+  line-height: 40px;
+}
+
+.divLine {
+  justify-content: center; /*not working*/
+  /*text-align: center;*/
+  /*position: center;*/
+}
+
+
+
+/* --> CSS LAYOUT <-- */
 .app_container {
-  /*Here we define the start of the grid*/
   height: 100vh;
   display: grid;
-
   grid-template-columns: 
       11.6666667% /*1fr*/ 
       repeat(12, minmax(0, 4,47916667%)) /*repeat(12, minmax(0, 86px))*/
       11.6666667% /*1fr*/
   ;
   column-gap: 2,08333333%; /*40px*/
-
   grid-template-areas:
     "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
     ". philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy ."
@@ -21,7 +86,6 @@
     "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
     "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
   ;
-
   grid-template-rows:
       1235px
       858px
@@ -30,49 +94,102 @@
       906px
       608px
       528px
-      1fr
-  ; /*85px*/ 
+      85px /*1fr*/
+  ;
 }
 
+
+
+/* NAVIGATION */
 .navigation {
   background-color: turquoise;
   grid-area: navigation;
 }
 
+
+
+/* PHILOSPHY */
 .philosophy {
   background-color: rgba(230,45,45,0.50);
   grid-area: philosophy;
 }
 
+
+
+/* NEWEST WORK */
 .newestWork {
   background-color: rgba(50,115,180,0.50);
   grid-area: newestWork;
 }
 
+
+
+/* CATEGORIES */
 .categories {
   background-color: rgba(120,230,45,0.50);
   grid-area: categories;
 }
 
+.categories_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*.categories_flex_item {
+  justify-content: center;
+}*/
+
+
+
+/* TESTIMONIALS */
 .testimonials {
   background-color: turquoise;
   grid-area: testimonials;
 }
 
+
+
+/* FOLLOW US ON INSTA */
 .followOnInsta {
   background-color: rgba(230,45,45,0.50);
   grid-area: followOnInsta;
+  text-align: center;
 }
 
+.insta_photos_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+/* FOOTER BROWSER*/
 .footerBrowser {
-  background-color: rgba(50,115,180,0.50);
+  /*background-color: rgba(50,115,180,0.50);*/
+  background-color: #EAEBE4;
   grid-area: footerBrowser;
 }
 
+.footer_flex {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/* COPYRIGHT */
 .copyright {
-  background-color: rgba(120,230,45,0.50);
+  /*background-color: rgba(120,230,45,0.50);*/
+  background-color: #FAFBF8;
+  text-align: center;
   grid-area: copyright;
 }
+
+
+
+/* --> MEDIA QUERIES FOR MOBILE AND TABLET <-- */
 
 @media screen and (max-width: 768px) {
   /*.navigation {
