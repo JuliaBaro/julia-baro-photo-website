@@ -71,9 +71,11 @@ p {
   height: 100vh;
   display: grid;
   grid-template-columns: 
-      11.6666667% /*1fr*/ 
-      repeat(12, minmax(0, 4.47916667%)) /*repeat(12, minmax(0, 86px))*/
-      11.6666667% /*1fr*/
+    /*11.6666667% - 2240px*/ /*1fr*/ 
+    9.58333337% /*224px-40px in %*/
+    repeat(12, minmax(0, 4.47916667%)) /*repeat(12, minmax(0, 86px))*/
+    9.58333337% /*224px-40px in %*/
+    /*11.6666667% - 2240px*/ /*1fr*/ 
   ;
   column-gap: 2.08333333%; /*40px*/
   grid-template-areas:
@@ -94,7 +96,7 @@ p {
       906px
       608px
       528px
-      85px /*1fr*/
+      1fr /*85px*/ 
   ;
 }
 
