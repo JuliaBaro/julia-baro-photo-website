@@ -18,27 +18,45 @@ import line from './line.svg';
 //<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
 //font-family: 'Nunito Sans', sans-serif; font-family: 'Open Sans', sans-serif;font-family: 'Playfair Display', serif;
 
-//TAGS TO USE
-//body 
-//header
-//main
-//article
-//footer
-
 //define grid on grid items / nested grids - grid applies only to direct children 
 
 function App() {
   return (
     <div className="app_container">
 
+      {/* ACCESS IMAGES IN PUBLIC FOLDER */}
+      {/* https://stackoverflow.com/questions/47196800/reactjs-and-images-in-public-folder */}
 
+      {/* png vs jpg format imgs? */}
       
       <div className="navigation">
-        <div className="">
-          <img alt="img1"/>
-          <img alt="img2"/>
-          <img alt="img3"/>
-          <img alt="img4"/>
+        <div className="logo">
+          <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="Julia Baro Photography Logo" />
+        </div>
+
+        {/*<hr className="horizontal_line" />*/}
+        <img src={line} className="divLine" alt="line" />
+
+        {/* navigation base: https://codepen.io/juliabaro/pen/JjGajvW */}
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav no-search">
+            <li class="nav-item"><a href="#">GALÉRIÁK</a></li>
+            <li class="nav-item"><a href="#">INFÓ</a></li>
+            <li class="nav-item"><a href="#">RÓLAM</a></li>
+            <li class="nav-item"><a href="#">KAPCSOLAT</a></li>
+          </ul>
+        </nav>   
+
+        <div className="hero_images">
+          <img className="hero_image" src={process.env.PUBLIC_URL + "/images/fashion-photo-1.png"} alt="Fashion photography in little white dress" />
+          <img src={process.env.PUBLIC_URL + "/images/portrait-photo-2.png"} alt="Musician portrait with violin" />
+          <img src={process.env.PUBLIC_URL + "/images/portrait-photo-3.png"} alt="Closeup fashion portraiture" />
+          <img src={process.env.PUBLIC_URL + "/images/couple-photo-4.png"} alt="Cute couple photo" />
         </div>
         <h3>művészi portré és párfotó</h3>
         <h3>— Budapest —</h3>

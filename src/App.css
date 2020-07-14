@@ -12,7 +12,7 @@ font weights by number
 700 bold
 800 extra bold
 900 black
-*/
+px;*/
 
 h1 {
   font-family: 'Playfair Display';
@@ -64,7 +64,13 @@ p {
   /*position: center;*/
 }
 
+/*.horizontal_line {
+  width: 968px;
+  height: 1px;
+  color: #707070; 
+}*/
 
+/* ------------------------------------------------------------- */
 
 /* --> CSS LAYOUT <-- */
 .app_container {
@@ -96,19 +102,59 @@ p {
       906px
       608px
       528px
-      1fr /*85px*/ 
+      85px /*1fr*/ 
   ;
 }
 
-
+/* ------------------------------------------------------------- */
 
 /* NAVIGATION */
+
 .navigation {
-  background-color: turquoise;
+  background-color: #F0F0EB;
   grid-area: navigation;
 }
 
+.logo{
+  /*justify-content: center;*/
+  text-align: center;
+}
 
+.hero_images{
+  /*max-height: 629px;*/
+  /* how to set image height*/
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  /*align-content: space-between;*/
+}
+
+/*.hero_image {
+  max-height: 629px; 
+  max-width: 464px;
+}*/
+
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /*justify-self: center;*/
+}
+
+.nav-item a {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #3498db; /*change colr*/
+}
+
+
+/* ------------------------------------------------------------- */
 
 /* PHILOSPHY */
 .philosophy {
@@ -116,7 +162,7 @@ p {
   grid-area: philosophy;
 }
 
-
+/* ------------------------------------------------------------- */
 
 /* NEWEST WORK */
 .newestWork {
@@ -124,7 +170,7 @@ p {
   grid-area: newestWork;
 }
 
-
+/* ------------------------------------------------------------- */
 
 /* CATEGORIES */
 .categories {
@@ -142,7 +188,7 @@ p {
   justify-content: center;
 }*/
 
-
+/* ------------------------------------------------------------- */
 
 /* TESTIMONIALS */
 .testimonials {
@@ -150,7 +196,7 @@ p {
   grid-area: testimonials;
 }
 
-
+/* ------------------------------------------------------------- */
 
 /* FOLLOW US ON INSTA */
 .followOnInsta {
@@ -165,7 +211,7 @@ p {
   justify-content: center;
 }
 
-
+/* ------------------------------------------------------------- */
 
 /* FOOTER BROWSER*/
 .footerBrowser {
@@ -179,7 +225,7 @@ p {
   flex-direction: row;
 }
 
-
+/* ------------------------------------------------------------- */
 
 /* COPYRIGHT */
 .copyright {
@@ -189,7 +235,7 @@ p {
   grid-area: copyright;
 }
 
-
+/* ------------------------------------------------------------- */
 
 /* --> MEDIA QUERIES FOR MOBILE AND TABLET <-- */
 
