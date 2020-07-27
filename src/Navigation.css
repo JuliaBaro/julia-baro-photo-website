@@ -1,140 +1,68 @@
-  /*.App-logo {
-    padding-top: 73px; 
-    padding-bottom: 65px; 
-    width: 382px;
-  }
 
-  .App-header {
-    display: flex;
-  }
 
-  .Div-line {
-      width: 968px;
-  }*/
-  
-  /* BASIC SETUP */
-  
-  /*.page-wrapper {
-    width: 100%;
-    height: auto;
-  }*/
-  
-  /*.nav-wrapper {
-    width: 100%;
-    top: 0;
-    background-color: #F0F0EB;
-  }*/
-  
-  /* NAVIGATION */
-  
-  /*.navbar {
-    display: grid;
-    align-items: center;
-    height: 50px;
-    overflow: hidden;
-  }*/
-  /*grid-template-columns: 1fr 3fr;*/
-  
-  /*.navbar ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4,3fr);
-    justify-self: center;
-  }
-  
-  .nav-item a {
-    color: #000;
-    font-size: 0.9rem;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-  }*/
-  /*transition: color 0.3s ease-out;*/
-  
-  /*.nav-item a:hover {
-    font-weight: bold;
-  }*/
-  
-  /* MOBILE MENU & ANIMATION */
-  
-  /*.menu-toggle .bar{
-    width: 25px;
-    height: 3px;
-    background-color: #3f3f3f;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .menu-toggle {
-    justify-self: end;
-    margin-right: 25px;
-    display: none;
-  }
-  
-  .menu-toggle:hover{
-    cursor: pointer;
-  }
-  
-  #mobile-menu.is-active .bar:nth-child(2){
-    opacity: 0;
-  }
-  
-  #mobile-menu.is-active .bar:nth-child(1){
-    -webkit-transform: translateY(8px) rotate(45deg);
-    -ms-transform: translateY(8px) rotate(45deg);
-    -o-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
-  }
-  
-  #mobile-menu.is-active .bar:nth-child(3){
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    -ms-transform: translateY(-8px) rotate(-45deg);
-    -o-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
-  }*/
-  
-/* Media Queries */
-  
-/* Mobile Devices - Phones/Tablets */
-  
-/*https://www.w3schools.com/cssref/css3_pr_mediaquery.asp*/
-/*@media only screen and (max-width: 720px) { 
-.features {
-    flex-direction: column;
-    padding: 50px;
-}*/
+/* NAVIGATION */
 
-/* MOBILE NAVIGATION */
-    
-/*.navbar ul {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    justify-content: start;
-    top: 55px;
-    background-color: #fff;
-    width: 100%;
-    height: calc(100vh - 55px);
-    transform: translate(-101%);
-    text-align: center;
-    overflow: hidden;
+.navigation {
+  background-color: #F0F0EB;
+  grid-area: navigation;
 }
 
-.navbar li {
-    padding: 15px;
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*padding-top: 21px;*/
+  /*padding-bottom: 100px;*/
 }
 
-.navbar li:first-child {
-    margin-top: 50px;
+.logo_and_line {
+  text-align: center;
+  padding-top: 73px;
 }
 
-.navbar li a {
-    font-size: 1rem;
+.logo {
+  padding-bottom: 54px;
 }
-    
-.menu-toggle, .bar {
-    display: block;
-    cursor: pointer;
-}*/
+
+.logo_image {
+  max-width: 382px;
+}
+
+.hero_images{
+  display: flex;
+  justify-content: center;
+}
+
+.hero_image {
+  /*height: 629px;*/
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  /*max-width: 464px;*/
+}
+
+.hero_image_caption {
+  padding-top: 66px;
+}
+ 
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /*justify-self: center;*/
+}
+
+.nav-item a {
+  font-family: 'Nunito Sans';
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  /*line-height: 40px;*/
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+  color: #3498db; /*change colr*/
+}

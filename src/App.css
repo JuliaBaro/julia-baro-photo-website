@@ -1,6 +1,4 @@
 
-
-
 /* --> FONTS STYLES AND DIV LINE <-- */
 
 /*
@@ -40,11 +38,12 @@ h3 {
   font-size: 24px; /*change to em/rem*/
   font-weight: 300;
   letter-spacing: 1.68px;
-  line-height: 40px;
+  line-height: 20px;
   text-align: center;
+  /*padding-top: 66px;*/
 }
 
-
+/* copyright */
 h4 {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px; /*change to em/rem*/
@@ -64,11 +63,21 @@ h5 {
   text-transform: uppercase;
 }
 
-h6 {
+/* footer phone number */
+/*h6 {
   font-family: 'Corbel';
-  font-size: 24px; /*change to em/rem*/
+  font-size: 24px; 
   font-weight: 400; 
   line-height: 29px;
+}*/
+
+/* selector numbers */
+h6 {
+  font-family: 'Corbel';
+  font-size: 18px; 
+  letter-spacing: 1.26px;
+  font-weight: 400; 
+  /*line-height: 40px;*/
 }
 
 p {
@@ -79,10 +88,14 @@ p {
   line-height: 36px;
 }
 
-.divLine {
+.div_line_nav {
   justify-content: center; /*not working*/
   /*text-align: center;*/
   /*position: center;*/
+}
+
+.div_line_body {
+  justify-content: center; 
 }
 
 /*.horizontal_line {
@@ -95,7 +108,7 @@ p {
 
 /* --> CSS LAYOUT <-- */
 .app_container {
-  height: 100vh;
+  /*height: 100vh;*/
   display: grid;
   grid-template-columns: 
     /*11.6666667% - 2240px*/ /*1fr*/ 
@@ -131,35 +144,49 @@ p {
 
 /* NAVIGATION */
 
-.navigation {
+/*.navigation {
   background-color: #F0F0EB;
   grid-area: navigation;
 }
 
-.logo{
-  /*justify-content: center;*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo_and_line {
   text-align: center;
+  padding-top: 73px;
+}
+
+.logo {
+  padding-bottom: 54px;
+}
+
+.logo_image {
+  max-width: 382px;
 }
 
 .hero_images{
-  /*max-height: 629px;*/
-  /* how to set image height*/
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
-  /*align-content: space-between;*/
 }
 
-/*.hero_image {
-  max-height: 629px; 
-  max-width: 464px;
-}*/
+.hero_image {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+}
 
+.hero_image_caption {
+  padding-top: 66px;
+}
+ 
 .navbar ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  /*justify-self: center;*/
 }
 
 .nav-item a {
@@ -167,15 +194,14 @@ p {
   color: #000;
   font-size: 18px;
   letter-spacing: 3.6px;
-  /*line-height: 40px;*/
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease-out;
 }
 
 .nav-item a:hover {
-  color: #3498db; /*change colr*/
-}
+  color: #3498db; 
+}*/
 
 
 /* ------------------------------------------------------------- */
@@ -184,6 +210,16 @@ p {
 .philosophy {
   background-color: rgba(230,45,45,0.50);
   grid-area: philosophy;
+}
+
+.philosophy_image {
+  max-width: 464px;
+  height:auto;
+}
+
+.philosophy_flex_container {
+  display: flex;
+  flex-direction: row;
 }
 
 /* ------------------------------------------------------------- */
@@ -218,6 +254,17 @@ p {
 .testimonials {
   background-color: turquoise;
   grid-area: testimonials;
+}
+
+.testimonials_card {
+  background-color: #F0F0EB;
+  max-width: 842px;
+  height: 463px; /*auto*/
+}
+
+.testimonials_select {
+  display: flex;
+  flex-direction: row;
 }
 
 /* ------------------------------------------------------------- */

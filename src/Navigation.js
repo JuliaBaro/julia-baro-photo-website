@@ -1,30 +1,48 @@
 import React from 'react';
 import './Navigation.css';
 //import logo from './logo.svg';
-//mport line from './line.svg';
+import line from './line.svg';
 
 function Navigation() {
     return (
-        <div class="page-wrapper">
-            {/*<div class="nav-wrapper">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    <img src={line} className="Div-line" alt="line" />
-                </header>
-                <nav class="navbar">
-                    <div class="menu-toggle" id="mobile-menu">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+        <div className="navigation">
+            <div className="logo_and_line">
+                <div className="logo">
+                    <img src={process.env.PUBLIC_URL + "/images/logo.png"} alt="Julia Baro Photography" className="logo_image"/*max-width="382px"*//>
+                </div>
+                <img src={line} className="div_line_nav" alt="line" />
+            </div>
+
+            {/* navigation base: https://codepen.io/juliabaro/pen/JjGajvW */}
+            {/* https://codepen.io/deyand/pen/pvmyjw */}
+            {/* https://codepen.io/mzeenkala/pen/gBmwob */}
+            {/*** add searchbox? */}
+            <div className="nav">
+                <nav className="navbar">
+                    <div className="menu-toggle" id="mobile-menu">
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
                     </div>
-                    <ul class="nav no-search">
-                        <li class="nav-item"><a href="#">Galériák</a></li>
-                        <li class="nav-item"><a href="#">Infó</a></li>
-                        <li class="nav-item"><a href="#">Rólam</a></li>
-                        <li class="nav-item"><a href="#">Kapcsolat</a></li>
+                    <ul className="nav no-search">
+                        <li className="nav-item"><a href="#">GALÉRIÁK</a></li>
+                        <li className="nav-item"><a href="#">INFÓ</a></li>
+                        <li className="nav-item"><a href="#">RÓLAM</a></li>
+                        <li className="nav-item"><a href="#">KAPCSOLAT</a></li>
                     </ul>
-                </nav>
-            </div>*/}
+                </nav>   
+            </div>
+
+            <div className="hero_images">
+                <img className="hero_image" src={process.env.PUBLIC_URL + "/images/fashion-photo-1.png"} alt="Fashion blogger in little white dress" />
+                <img className="hero_image" src={process.env.PUBLIC_URL + "/images/portrait-photo-2.png"} alt="Musician girl with violin" />
+                <img className="hero_image" src={process.env.PUBLIC_URL + "/images/portrait-photo-3.png"} alt="Closeup portrait with jevellery" />
+                <img className="hero_image" src={process.env.PUBLIC_URL + "/images/couple-photo-4.png"} alt="Cute couple sitting on a bench" />
+            </div>
+            <div className="hero_image_caption">
+                <h3>művészi portré és párfotó</h3>
+                <h3>— Budapest —</h3>
+            </div>
         </div>
     );
   }
