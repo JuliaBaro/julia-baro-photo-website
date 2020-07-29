@@ -144,66 +144,6 @@ p {
 
 /* NAVIGATION */
 
-/*.navigation {
-  background-color: #F0F0EB;
-  grid-area: navigation;
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.logo_and_line {
-  text-align: center;
-  padding-top: 73px;
-}
-
-.logo {
-  padding-bottom: 54px;
-}
-
-.logo_image {
-  max-width: 382px;
-}
-
-.hero_images{
-  display: flex;
-  justify-content: center;
-}
-
-.hero_image {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 100px;
-}
-
-.hero_image_caption {
-  padding-top: 66px;
-}
- 
-.navbar ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-}
-
-.nav-item a {
-  font-family: 'Nunito Sans';
-  color: #000;
-  font-size: 18px;
-  letter-spacing: 3.6px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-}
-
-.nav-item a:hover {
-  color: #3498db; 
-}*/
-
-
 /* ------------------------------------------------------------- */
 
 /* PHILOSPHY */

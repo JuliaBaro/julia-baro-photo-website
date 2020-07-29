@@ -8,8 +8,8 @@
 }
 
 .nav {
-  display: flex;
-  flex-direction: row;
+  /*display: flex;*/
+  /*flex-direction: row;*/
   justify-content: center;
   /*padding-top: 21px;*/
   /*padding-bottom: 100px;*/
@@ -47,22 +47,35 @@
  
 .navbar ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
+  /*display: grid;*/
+  /*grid-template-columns: repeat(4,1fr);*/
   /*justify-self: center;*/
 }
 
-.nav-item a {
+.nav_item a {
   font-family: 'Nunito Sans';
   color: #000;
   font-size: 18px;
   letter-spacing: 3.6px;
-  /*line-height: 40px;*/
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease-out;
+  padding-left: 25px; /*to evenly space out nav links - make it responsive*/
+  padding-right: 25px; /*to evenly space out nav links - make it responsive*/
 }
 
-.nav-item a:hover {
-  color: #3498db; /*change colr*/
+.nav_item a:hover {
+  font-weight: 800;
+}
+
+.nav_no_search{
+  /*text-align: center;*/
+  justify-content: center;
+  text-align: justify;
+  /*min-width: 500px;*/
+  /*justify-content: space-between;*/
+  /*float: left;*/
+  /*max-width: 536px;*/
+  display: flex;
+  /*justify-content: space-around;*/
 }

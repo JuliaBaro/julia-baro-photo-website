@@ -1,27 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
-import Route from 'react-router-dom/Route';
+import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 import line from './line.svg';
-//import leftArrow from './leftArrow';
-//import rightArrow from './rightArrow';
-//import quotemark from './quotemark';
  
-import Navigation from './Navigation';
-//import Galleries from './Galleries';
-//import Gallery from './Gallery';
-//import Info from './Info';
-//import About from './About';
-//import Contact from './Contact';
-//import Footer from './Footer';
+import Navigation from './components/Navigation/Navigation';
 
 //Use in index.html, head tag
 //Nunito Sans, Open Sans, Playfair Display
 //<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
 //font-family: 'Nunito Sans', sans-serif; font-family: 'Open Sans', sans-serif;font-family: 'Playfair Display', serif;
 
-//define grid on grid items / nested grids - grid applies only to direct children 
 
+//Website with multiple HTML pages: https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/multi-page-html-sites
 
 const Philosophy = () => {
   return(
@@ -171,73 +161,6 @@ class App extends React.Component {
       <Router>
         <div className="app_container">
           
-          {/****************************************************************/}
-          {/* REACT ROUTER DEMO */}
-          {/* https://www.youtube.com/watch?v=XRfD8xIOroA */}
-          {/* https://codesandbox.io/s/mq48rlj0pp */}
-          {/* https://www.google.com/search?client=firefox-b-d&q=responsive+navigation+with+react+router#kpvalbx=_pvMfX6vcEpaR1fAPqqerkAo30 */}
-
-          {/* CODEPEN - (RESPONSIVE) REACT ROUTER NAV */}
-          {/* https://codepen.io/borntofrappe/pen/gjzjrE */}
-          {/* https://codepen.io/alexdevero/pen/XpjKGV */}
-
-          <div>
-            <ul>
-              <li>
-                <NavLink to="/" exact activeStyle={{ color:'green' }}>Home</NavLink>{/*with NavLink you can provide specific style - with Link no*/}
-              </li>
-              <li>
-                <NavLink to="/galeriak"exact activeStyle={{ color:'green' }}>GALÉRIÁK</NavLink>
-              </li>
-              <li>
-                <NavLink to="/info" exact activeStyle={{ color:'green' }}>INFÓ</NavLink>
-              </li>
-              <li>
-                <NavLink to="/rolam" exact activeStyle={{ color:'green' }}>RÓLAM</NavLink>
-              </li>
-              <li>
-                <NavLink to="/kapcsolat" exact activeStyle={{ color:'green' }}>KAPCSOLAT</NavLink>
-              </li>
-            </ul>
-
-            {/*http://localhost:3000*/}
-            <Route path="/" exact strict render={
-              () => {
-                return (<h1>Home</h1>)
-              }
-            }/>
-
-            {/*http://localhost:3000/galeriak*/}
-            <Route path="/galeriak" exact strict render={
-              () => {
-                return (<h1>Galeriak</h1>)
-              }
-            }/>
-
-            {/*http://localhost:3000/info*/}
-            <Route path="/info" exact strict render={
-              () => {
-                return (<h1>Info</h1>)
-              }
-            }/>
-
-            {/*http://localhost:3000/rolam*/}
-            <Route path="/rolam" exact strict render={
-              () => {
-                return (<h1>Rolam</h1>)
-              }
-            }/>
-
-            {/*http://localhost:3000/kapcsolat*/}
-            <Route path="/kapcsolat" exact strict render={
-              () => {
-                return (<h1>Kapcsolat</h1>)
-              }
-            }/>
-          </div>
-
-          {/****************************************************************/}
-
           <Navigation />
           <Philosophy />
           <NewestWork />
