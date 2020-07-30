@@ -26,7 +26,7 @@ h1 {
 h2 {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 18px; /*change to em/rem*/
-  font-weight: 600;
+  font-weight: 600; /*semi bold*/
   letter-spacing: 3.6px;
   line-height: 40px;
   text-transform: uppercase;
@@ -62,14 +62,6 @@ h5 {
   line-height: 40px;
   text-transform: uppercase;
 }
-
-/* footer phone number */
-/*h6 {
-  font-family: 'Corbel';
-  font-size: 24px; 
-  font-weight: 400; 
-  line-height: 29px;
-}*/
 
 /* selector numbers */
 h6 {
@@ -120,23 +112,27 @@ p {
   column-gap: 2.08333333%; /*40px*/
   grid-template-areas:
     "navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation navigation"
+    /*"heroImages heroImages heroImages heroImages heroImages heroImages heroImages heroImages heroImages heroImages heroImages heroImages heroImages heroImages"*/
     ". philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy philosophy ."
     ". newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork newestWork ."
     ". categories categories categories categories categories categories categories categories categories categories categories categories ."
     ". testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials testimonials ."
-    ". followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta ."
+    /*". followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta followOnInsta ."
     "footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser footerBrowser"
-    "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"
+    "copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright copyright"*/
+    /*". footer footer footer footer footer footer footer footer footer footer footer footer ."*/
   ;
   grid-template-rows:
-      1235px
+      290px /*only nav*/
+      /*1235px*/
       858px
       1307px
       230px
       906px
-      608px
+      /*608px
       528px
-      85px /*1fr*/ 
+      85px*/ /*1fr*/ 
+      1221px /*whole footer part*/
   ;
 }
 
@@ -209,6 +205,8 @@ p {
 
 /* ------------------------------------------------------------- */
 
+/*************** FOOTER ***************/
+
 /* FOLLOW US ON INSTA */
 .followOnInsta {
   background-color: rgba(230,45,45,0.50);
@@ -222,7 +220,7 @@ p {
   justify-content: center;
 }
 
-/* ------------------------------------------------------------- */
+/* ------------------------------------ */
 
 /* FOOTER BROWSER*/
 .footerBrowser {
@@ -236,7 +234,7 @@ p {
   flex-direction: row;
 }
 
-/* ------------------------------------------------------------- */
+/* ------------------------------------ */
 
 /* COPYRIGHT */
 .copyright {

@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 import line from './line.svg';
+
+import { BrowserRouter as Router } from "react-router-dom";
  
 import Navigation from './components/Navigation/Navigation';
 
@@ -12,6 +13,23 @@ import Navigation from './components/Navigation/Navigation';
 
 
 //Website with multiple HTML pages: https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/multi-page-html-sites
+
+{/*const HeroImages = () => {
+  return(
+    <div className="hero_images">
+      <div className="hero_images">
+          <img className="hero_image" src={process.env.PUBLIC_URL + "/images/fashion-photo-1.png"} alt="Fashion blogger in little white dress" />
+          <img className="hero_image" src={process.env.PUBLIC_URL + "/images/portrait-photo-2.png"} alt="Musician girl with violin" />
+          <img className="hero_image" src={process.env.PUBLIC_URL + "/images/portrait-photo-3.png"} alt="Closeup portrait with jevellery" />
+          <img className="hero_image" src={process.env.PUBLIC_URL + "/images/couple-photo-4.png"} alt="Cute couple sitting on a bench" />
+      </div>
+      <div className="hero_image_caption">
+          <h3>művészi portré és párfotó</h3>
+          <h3>— Budapest —</h3>
+      </div>
+    </div>
+  );
+}*/}
 
 const Philosophy = () => {
   return(
@@ -97,13 +115,16 @@ const Testimonials = () => {
   );
 }
 
-const FollowOnInsta = () => {
-  return(
-    <div className="followOnInsta">
+//const Footer = () => {
+  //return(
+    //<div>
+
+    {/* FOLLOW ON INSTA */}
+    {/*** is it possible to embed photos from insta */}
+    {/*<div className="followOnInsta">
       <img src={line} className="div_line" alt="line" />
       <h1>Kövess az Instagramon</h1> 
       <h2>@juliabarophoto</h2>
-      {/*** is it possible to embed photos from insta */}
       <div className="insta_photos_flex">
         <img src={process.env.PUBLIC_URL + "/images/insta-portrait-in-nature-1.png"} alt="Girl touching a tree" />
         <img src={process.env.PUBLIC_URL + "/images/insta-red-portrait-2.png"} alt="Red haired girl smiling" />
@@ -112,14 +133,10 @@ const FollowOnInsta = () => {
         <img src={process.env.PUBLIC_URL + "/images/insta-closeup-portrait-5.png"} alt="Girl with handvowen scarf" />
         <img src={process.env.PUBLIC_URL + "/images/insta-musician-portrait-6.png"} alt="Musician with her violin" />
       </div>
-    </div>
-  );
-}
+    </div>*/}
 
-const FooterBrowser = () => {
-  return(
-    /*** add back to top arrow? */
-    <div className="footerBrowser">
+    {/* FOOTER BROWSER */}
+    {/*<div className="footerBrowser">
       <div className="footer_flex"> 
         <div>
           <h1>Kereső</h1>
@@ -136,17 +153,16 @@ const FooterBrowser = () => {
           <h2>+36 30 224 5167</h2>
         </div>
       </div>
-    </div>
-  );
-}
+    </div>*/}
 
-const Copyright = () => {
-  return(
-    <div className="copyright">
+    {/* COPYRIGHT */}
+    {/*<div className="copyright">
       <h4>© 2020 Julia Baro Photography</h4>
-    </div>
-  );
-}
+    </div>*/}
+
+    //</div>
+  //);
+//}
 
 class App extends React.Component {
   constructor() {
@@ -154,24 +170,23 @@ class App extends React.Component {
     this.state = {
       route: "app"
     }
-  }
+}
 
   render() {
     return (
-      <Router>
         <div className="app_container">
-          
-          <Navigation />
-          <Philosophy />
-          <NewestWork />
-          <Categories />
-          <Testimonials />
-          <FollowOnInsta />
-          <FooterBrowser />
-          <Copyright />
+          <Router>
+            
+            <Navigation />
+            {/*<HeroImages />*/}
+            <Philosophy />
+            <NewestWork />
+            <Categories />
+            <Testimonials />
+            {/*<Footer />*/}
 
+          </Router>
         </div>
-      </Router>
     );
   }
 }
