@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { render } from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // NAVIGATION
 import Nav from "./components/Nav/Nav";
@@ -14,13 +14,15 @@ import Contact from './pages/Contact/Contact';
 
 const App = () => (
   <div>
-    <Nav />
+    <Nav /> {/* rendering nav on every page */}
     <div className="container">
-      <Route exact={true} path="/" component={Home} />
-      <Route exact path="/galeriak" component={Galleries} />
-      <Route exaxt path="/info" component={Info} />
-      <Route exact path="/rolam" component={About} />
-      <Route exact path="/kapcsolat" component={Contact} />
+      <Switch>
+        <Route exact={true} path="/" component={Home} />
+        <Route exact path="/galeriak" component={Galleries} />
+        <Route exaxt path="/info" component={Info} />
+        <Route exact path="/rolam" component={About} />
+        <Route exact path="/kapcsolat" component={Contact} />
+      </Switch>
     </div>
   </div>
 );

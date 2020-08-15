@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 
 //import Nav from '../Nav/Nav';
@@ -36,11 +37,9 @@ const About = () =>  {
           </div>
 
           <h1>Infó </h1>
-          {/*<button type="button"><h5>Így dolgozom </h5></button>*/}
-          <a href='http://localhost:3000/info'>Így dolgozom</a>
+          <Link to='/info'>Így dolgozom</Link>
           <h1>Kapcsolat</h1>
-          {/*<button type="button"><h5>Üzenj nekem</h5></button>*/}
-          <a href='http://localhost:3000/kapcsolat'>Üzenj nekem</a>
+          <Link to='/kapcsolat'>Üzenj nekem</Link>
 
           <Footer/>
         </div>

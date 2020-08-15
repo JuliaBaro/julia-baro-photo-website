@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
+import { Link } from 'react-router-dom';
 import './Home.css';
 import line from '../../line.svg';
 
-//import Nav from '../Nav/Nav';
 import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
@@ -10,7 +10,6 @@ const Home = () => {
 
     <Fragment>
       <div>
-      {/*<Navigation />*/}
 
       <div className="hero_images">
         <div className="hero_images">
@@ -41,7 +40,7 @@ const Home = () => {
               önmagát látja viszont.
             </p>
             {/*<h5>Tudj meg többet</h5>*/}
-            <a href='http://localhost:3000/rolam'>Tudj meg többet</a>
+            <Link to='/rolam'>Tudj meg többet</Link>
             <img src={line} className="div_line" alt="line" />
           </div>
         </div>
@@ -56,7 +55,7 @@ const Home = () => {
         <img src={process.env.PUBLIC_URL + "/images/lifestyle-photo.png"} alt="Spinning girl" />
         <img src={process.env.PUBLIC_URL + "/images/closeup-portrait.png"} alt="Daydreaming girl" />
         {/*<h5>Összes galéria</h5>*/}
-        <a href='http://localhost:3000/galeriak'>Összes galéria</a>
+        <Link to='/galeriak'>Összes galéria</Link>
       </div>
 
       <div className="categories">

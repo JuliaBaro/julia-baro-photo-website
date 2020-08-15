@@ -1,14 +1,7 @@
 import React from 'react';
-//import { Link } from 'react-router';
-//import { BrowserRouter as Router } from 'react-router-dom';
-//import { Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import line from '../../line.svg';
-
-/*import Galleries from '../../pages/Galleries/Galleries';
-import Info from '../../pages/Info/Info';
-import About from '../../pages/About/About';
-import Contact from '../../pages/Contact/Contact';*/
 
 const Footer = () => {
     return (
@@ -34,34 +27,21 @@ const Footer = () => {
         <div className="footerBrowser">
           <div className="footer_flex"> 
             <div>
-              {/*<Router>
-                <Switch>
-                  <h1>Kereső</h1>
-                  <Route path='/galeriak' component={Galleries}></Route>
-                  <Route path='/info' component={Info}><h2>Infó</h2></Route>
-                  <Route path='/rolam' component={About}><h2>Rólam</h2></Route>
-                  <Route path='/kapcsolat' component={Contact}><h2>Kapcsolat</h2></Route>
-                </Switch>
-              </Router>*/}
               <h1>Kereső</h1>
               <ul> 
                 <li>
-                  <a href='http://localhost:3000/galeriak'>Galériák</a>
+                  <Link to='/galeriak'>Galériák</Link>
                 </li>
                 <li>
-                  <a href='http://localhost:3000/info'>Infó</a>
+                  <Link to='/info'>Infó</Link>
                 </li>
                 <li>
-                  <a href='http://localhost:3000/rolam'>Rólam</a>
+                  <Link to='/rolam'>Rólam</Link>
                 </li>
                 <li>
-                  <a href='http://localhost:3000/kapscolat'>Kapcsolat</a>
+                  <Link to='/kapcsolat'>Kapcsolat</Link>
                 </li>
               </ul>
-              {/*<h2>Galériák</h2>
-              <h2>Infó</h2>
-              <h2>Rólam</h2>
-              <h2>Kapcsolat</h2>*/}
             </div>
             <div>
               <img src={process.env.PUBLIC_URL + "/images/bottom-logo.png"} alt="Julia Baro Photography" />

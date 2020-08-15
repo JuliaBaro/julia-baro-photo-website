@@ -1,14 +1,13 @@
 import React, { Fragment } from "react";
+import { Link } from 'react-router-dom';
 import './Info.css';
 
-//import Nav from '../Nav/Nav';
 import Footer from '../../components/Footer/Footer';
 
 const Info = () => {
     return (
       <Fragment>
         <div className="info_container">
-          {/*<Navigation />*/}
 
           <h1>HASZNOS TUDNIVALÓK</h1>
 
@@ -70,11 +69,9 @@ const Info = () => {
           </p>
 
           <h1>Rólam</h1>
-          {/*<button type="button"><h5>Ismerj meg jobban</h5></button>*/}
-          <a href='http://localhost:3000/rolam'>Ismerj meg jobban</a>
+          <Link to='/rolam'>Ismerj meg jobban</Link>
           <h1>Kapcsolat</h1>
-          {/*<button type="button"><h5>Üzenj nekem</h5></button>*/}
-          <a href='http://localhost:3000/kapcsolat'>Üzenj nekem</a>
+          <Link to='/kapcsolat'>Üzenj nekem</Link>
 
           <Footer/>
         </div>
